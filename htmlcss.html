@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>
+            HTML & CSS
+        </title>
+        <style>
+            body{
+                background-color: lightblue;
+            }
+            .html h1{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: blue;
+                display: flex;
+                justify-content: center;
+            }
+            .html #def{
+                font-family:'Courier New', Courier, monospace;
+                display: flex;
+                justify-content: center;
+            }
+            .tags{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border: royalblue 1px solid;
+                padding-left: 14px;
+            }
+            .lists{
+                margin-left: 580px;
+            }
+            .html #ulist, #olist{
+                color: brown;
+            }
+            .lists li{
+                font-family: 'Courier New', Courier, monospace;
+            }
+            table{
+                display: flex;
+                justify-content: center;
+            }
+            .table td, th{
+                border: black 1px solid;
+                border-collapse: collapse;
+            }
+            .css h1{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: red;
+                display: flex;
+                justify-content: center;
+            }
+            .css #def, #methods{
+                font-family:'Courier New', Courier, monospace;
+                display: flex;
+                justify-content: center;
+            }
+            .css .selectors{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border: royalblue 1px solid;
+                padding-left: 14px;
+            }
+            .extras #p2{
+                display: flex;
+                justify-content: center;
+            }
+            .extras img{
+                max-width: 100%;
+                height: auto;
+            }
+            .references h2{
+                display: flex;
+                justify-content: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: blueviolet;
+            }
+            .references a{
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="html">
+            <h1>HTML</h1>
+            <h2 id="def">HTML refers to Hypertext Markup Language, and it is the basic language used for web pages.</h2>
+            <div class="tags">
+                <p>The head tag is used to include general data about the web page (such as the title), or things such as the page style, links, etc.</p>
+                <p>The body tag is where the structure of the page is done.  Things like headings, paragraphs, boxes, divs and any other HTML tags and utilities are put inside the body tag.</p>
+                <p>The section tag is simply used to state a section in the document, by default it uses a block display.</p>
+                <p>The article tag is used to create separate content that is usually used for information that would be found on forums, blogs, etc.</p>
+                <p>The aside tag is used to write content separated from the content that it is placed in. Often styled as a sidebar.</p>
+                <p>A header tag is used to place introductory content, information or used for navigation.</p>
+                <p>A footer tag is, certainly, a tag used to place a footer on the web page. It can contain relevant information about the contents of the page, or about its authors.</p>
+            </div>
+            <div class="lists">
+                <h3 id="ulist">Unordered list of fruits</h3>
+                <ul>
+                    <li>banana</li>
+                    <li>apple</li>
+                    <li>peach</li>
+                </ul>
+                <h3 id="olist">Ordered list of fruits</h3>
+                <ol>
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>peach</li>
+                </ol>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Videogame</th>
+                        <th>Genre</th>
+                        <th>Developer</th>
+                    </tr>
+                    <tr>
+                        <td>Signalis</td>
+                        <td>Survival horror</td>
+                        <td>rose-engine</td>
+                    </tr>
+                    <tr>
+                        <td>Celeste</td>
+                        <td>Platformer</td>
+                        <td>Maddy Makes Games</td>
+                    </tr>
+                    <tr>
+                        <td>Outer Wilds</td>
+                        <td>Open world adventure</td>
+                        <td>Mobius Digital</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="css">
+            <h1>CSS</h1>
+            <h2 id="def">CSS refers to Cascade Style Sheets, and it is used to style a web page along HTML.</h2>
+            <p id="methods">There are three ways to use CSS with a HTML document. The first way is by internal CSS, using the style tag in the HTML document. The second way is by using the inline style attribute in HTML tags. The third way is by using an external CSS document and linking it in the HTML document.</p>
+            <div class="selectors">
+                <p id="selector">A CSS selector is what is used to choose the HTML element that will be styled. It is probably the most important part of styling an HTML document. A CSS rule is a set of style properties that are applied to one or more HTML elements.</p>
+                <p>A tag selector is used to select all elements of a specific selector, or elements attached to a specific identifier such as a class or id.</p>
+                <p>A class selector is used to style all elements with a specific class identifier.</p>
+                <p>A class selector combined with a tag selector would select all the elements that are of the tag type that are inside the specified class.</p>
+                <p>An id selector is used to style tags that are identified by a specific id name.</p>
+                <p>The main difference between a class and an id is that classes are usually used for multiple tags and it is useful to use the same type of style for all elements from that class. An id is generally used more specifically for individual elements, which can be a single element or elements inside other tags.</p>
+            </div>
+            <div class="extras">
+                <p id="p1">A CSS box model represents the design and layout of a HTML element. It is a box that surrounds the element, which consists of margins, borders, padding and the content inside the box. All these elements can be styled with CSS.</p>
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*E_YuB8x1B3T3h6PIJ_I9qQ.png" alt="This is supposed to be an image">
+                <p id="p2">You can easily change the font color of a text element by selecting the element and using the color attribute. It works for any text-type HTML element.</p>
+            </div>
+        </div>
+        <div class="references">
+            <h2>References</h2>
+            <a href="https://www.w3schools.com/TAgs/tag_section.asp">https://www.w3schools.com/TAgs/tag_section.asp</a>
+            <a href="https://www.w3schools.com/TAgs/tag_article.asp">https://www.w3schools.com/TAgs/tag_article.asp</a>
+            <a href="https://www.w3schools.com/TAgs/tag_aside.asp">https://www.w3schools.com/TAgs/tag_aside.asp</a>
+            <a href="https://www.w3schools.com/TAgs/tag_header.asp">https://www.w3schools.com/TAgs/tag_header.asp</a>
+            <a href="https://www.w3schools.com/TAgs/tag_footer.asp">https://www.w3schools.com/TAgs/tag_footer.asp</a>
+            <a href="https://jenkov.com/tutorials/css/css-properties-css-rules.html">https://jenkov.com/tutorials/css/css-properties-css-rules.html</a>
+            <a href="https://www.w3schools.com/css/css_boxmodel.asp">https://www.w3schools.com/css/css_boxmodel.asp</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WikiLeaks
+        </title>
+        <style>
+            .topnavigation{
+                display: flex;
+            }
+            .toptitle img{
+                position: absolute;
+                top: 5px;
+            }
+            .toptitle h1{
+                margin-top: 6px;
+                margin-left: 29px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: normal;
+                font-size: 1.9em;
+                color: #093a41;
+            }
+            .topbar ul{
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                margin-left: 29px;
+                
+            }
+            .topbar li{
+                display: inline-block;
+                margin: 10px 0.1px;
+                padding: .55em;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 1em;
+                letter-spacing: 2px;
+                color: #4d5f69;
+            }
+            .topbuttons{
+                display: inline-block;
+                position: absolute;
+                right: 20px;
+                top: 25px;
+                margin: 0px;
+                padding: 0px;
+            }
+            .topbuttons a{
+                text-decoration: none;
+                color: #fff;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 1em;
+                letter-spacing: 2px;
+                margin: 10px 0px;
+                padding: 15px 10px;
+                border-radius: 4px;
+            }
+            .topbuttons #donate{
+                background-color: #e5332a;
+            }
+            .topbuttons #submit{
+                background-color: #5c727d;
+            }
+            .searchbar{ /*I've had problems with matching sizes in this part*/
+                width: 49.1%; /*I've had to hard code the width of the searchbar to match the input*/
+                display: block;
+                margin: auto;
+                position: absolute; /*the border unmatches if the page is zoomed in/out*/
+                /*border: solid; I used this line of code to see how the border works*/
+                top: 148px;
+                left: 339px;
+                padding-right: 0;
+            }
+            .searchbar input{
+                display: block;
+                border: #cccccc 1px solid;
+                border-radius: 4px;
+                color: #7d939f;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 1.2em;
+                letter-spacing: 2px;
+                padding: 14px 1em 16px 1em;
+                width: 631px;
+            }
+            .searchbar button{
+                position: absolute;
+                right: 9.5px;
+                top: 11px;
+                display: block;
+                background-image: url(https://wikileaks.org/static/img/magnifier-green.png);
+                background-color: transparent;
+                border: 0;
+                background-size: 1.4em;
+                background-position: center center;
+                background-repeat: no-repeat;
+                height: 1.7em;
+                width: 1.6em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topnavigation">
+            <div class="toptitle">
+                <img src="https://wikileaks.org/static/img/wl-logo.png" alt="WikiLeaks Logo" width="22" height="52">
+                <h1>WikiLeaks</h1>
+            </div>
+            <div class="topbar">
+                <ul>
+                    <li>Leaks</li>
+                    <li>News</li>
+                    <li>About</li>
+                    <li>Partners</li>
+                </ul>
+            </div>
+            <div class="topbuttons">
+                <a id="donate" href="https://shop.wikileaks.org/donate">Donate</a>
+                <a id="submit" href="https://wikileaks.org/#submit">Submit</a>
+            </div>
+        </div>
+        <div class="searchbar">
+            <form action="https://search.wikileaks.org/" method="get">
+                <input type="text" placeholder="Search Keywords">
+                <button type="submit"></button>
+            </form>
+        </div>
+    </body>
+</html>
