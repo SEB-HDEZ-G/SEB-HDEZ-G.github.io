@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+        div {
+            margin: 20px;
+        }
+    </style>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+        <title>API Tutorial</title>
+    </head>
+    <body>
+        <h1 id="tutorialTitle">How to use the Youtube API to retrieve channel data</h1>
+        <div id="info">
+            <p>You must have a Google account to acces the Google API console, request an API key and register the application. Then, create a project from the Google Developers console, where authorization credentials will be given. You must make sure that the API tool 'YouTube Data API v3' is enabled. You must also make sure that OAuth 2.0 authorization is implemented.</p>
+            <p>You can use the YouTube Data API Guides to see some tutorials on how to use JavaScript to generate requests with the API. In this case, to retrieve general information from a YouTube channel, you must use the URL: https://www.googleapis.com/youtube/v3/channels (specific information in the YouTube Data API Guides 'Implementation: Channels' section).</p>
+            <p>In an async function, you can use fetch' to make a 'GET' request to retrieve information from the specified YouTube channel, along with 'await', which will pause the execution of the async function until the Promise from 'fetch' is resolved. Then, you must convert the 'fetch' response to JSON so that you can use the retrieved data in your console and webpage.</p>
+        </div>
+    </body>
+</html>
