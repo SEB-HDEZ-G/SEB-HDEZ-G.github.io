@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        div {
+          margin: 30px;
+        }
+    </style>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+        <title>Escuelas</title>
+    </head>
+    <body>
+        <div>
+            <h1>Lista de escuelas</h1>
+        </div>
+        <div>
+            <a href="/">Bienvenida</a>
+            <a href="/donantes">Donantes</a>
+        </div>
+        <div id="container"></div>
+
+        <script>
+            async function obtenerEscuelas() {
+                const listaEscuelas = await fetch("/api/escuelas");
+                const jsonLE = await listaEscuelas.json();
+                console.log(jsonLE);
+
+                const jsonString = JSON.stringify(jsonLE);
+                const container = document.getElementById("container");
+                container.textContent = jsonString
+            }
+            obtenerEscuelas();
+        </script>
+    </body>
+    <script type="module" src="/servidor.js"></script>
+</html>
